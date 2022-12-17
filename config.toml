@@ -2,12 +2,12 @@ baseURL = 'https://d4r18c3.github.io/blog/'
 languageCode = 'en-us'
 title = 'Blog1'
 
-theme = "m10c"
+theme = "anatole"
 
 [params]
   author = "dc3"
   description = "A blog about all things technical."
-  avatar = "assets/avatar.png"
+  avatar = "/assets/avatar.png"
 
   [[menu.main]]
     identifier = "tags"

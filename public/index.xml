@@ -13,7 +13,9 @@
       <pubDate>Fri, 16 Dec 2022 21:49:57 -0300</pubDate>
       
       <guid>https://d4r18c3.github.io/blog/posts/first-post/</guid>
-      <description>Hello world!</description>
+      
+        <description>Hello world!</description>
+      
     </item>
     
   </channel>
