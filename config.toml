@@ -1,3 +1,14 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://d4r18c3.github.io/blog/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Blog'
+
+theme = "m10c"
+
+[params]
+  author = "dc3"
+  description = "A blog about all things technical."
+
+  [[params.social]]
+    icon = "github"
+    name = "GitHub"
+    url = "https://github.com/d4r18c3"
