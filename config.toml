@@ -7,6 +7,12 @@ theme = "m10c"
 [params]
   author = "dc3"
   description = "A blog about all things technical."
+  avatar = assets/avatar.png
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
 
   [[params.social]]
     icon = "github"
