@@ -7,7 +7,7 @@ theme = "m10c"
 [params]
   author = "dc3"
   description = "A blog about all things technical."
-  avatar = assets/avatar.png
+  avatar = "assets/avatar.png"
 
   [[menu.main]]
     identifier = "tags"
