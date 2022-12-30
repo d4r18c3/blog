@@ -4,6 +4,35 @@ title = 'Blog1'
 
 theme = 'anatole'
 
+[taxonomies]
+    category = "categories"
+    series = "series"
+    tag = "tags"
+
+[params]
+  author = 'Diego Crescêncio'
+  description = 'Aprendendo em público. Uma jornada de aprendizado e recordações.'
+  profilePicture = 'images/d.jpg'  
+  contentratio = 0.7
+  hidesidebar = false
+  copyright = "Diego Crescêncio | 2020-{{ YEAR }}"
+  customCss = ['css/custom.css']
+
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://linkedin.com/in/diegocrescencio"
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "Github"
+url = "https://github.com/d4r18c3"
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "E-mail"
+url = "mailto:diego@crescencio.com.br"
+
 [menu]
 
   [[menu.main]]
@@ -18,45 +47,32 @@ theme = 'anatole'
   identifier = "posts"
   url = "/posts/"
 
-  [[menu.main]]
+ [[menu.main]]
   name = "Ordem cronológica"
-  weight = 210
-  identifier = "posts"
+  weight = 200
+  identifier = "chronology"
   url = "/posts/"
- parent = "Artigos"
+  parent = "posts"
 
   [[menu.main]]
   name = "Categorias"
   weight = 220
-  identifier = "posts"
+  identifier = "categories"
   url = "/categories/"
- parent = "Artigos"
+  parent = "posts"
 
   [[menu.main]]
-  name = "Etiquetas"
-  weight = 230
-  identifier = "posts"
-  url = "/tags/"
- parent = "Artigos"
-
-
+    identifier = "tags"
+    weight = 290
+    name = "Tags"
+    url = "/tags/"
+    parent = "posts"
+    
   [[menu.main]]
   name = "Sobre"
   weight = 300
   identifier = "about"
   url = "/about/"
 
-[params]
-  author = 'dc3'
-  description = 'Aprendendo em público. Uma jornada de aprendizado e recordações.'
-  profilePicture = 'images/d.jpg'
 
-  [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
 
-  [[params.social]]
-    icon = "github"
-    name = "GitHub"
-    url = "https://github.com/d4r18c3"

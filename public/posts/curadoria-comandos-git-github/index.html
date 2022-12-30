@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <title>
+    Diego Crescêncio
+        |
+        Curadoria de comandos básicos para git e github
+      
+
+    
+
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.109.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Diego Crescêncio" />
+  <meta
+    name="description"
+    content="Aprendendo em público. Uma jornada de aprendizado e recordações."
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/blog/scss/main.min.99393b720daa0e4e122d508358dfaa568774f7a5871f48ec1a496f33e554dae6.css"
+      integrity="sha256-mTk7cg2qDk4SLVCDWN&#43;qVod096WHH0jsGklvM&#43;VU2uY="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/blog/css/markupHighlight.min.31b0a1f317f55c529a460897848c97436bb138b19c399b37de70d463a8bf6ed5.css"
+    integrity="sha256-MbCh8xf1XFKaRgiXhIyXQ2uxOLGcOZs33nDUY6i/btU="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/blog/css/custom.min.753b3e5e615ae860eb3ffa16c51fc96caf584f758a85884df42af57ea3827835.css"
+      integrity="sha256-dTs&#43;XmFa6GDrP/oWxR/JbK9YT3WKhYhN9Cr1fqOCeDU="
+      crossorigin="anonymous"
+      media="screen"
+    />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/blog/fontawesome/css/fontawesome.min.7d272de35b410fb165377550cdf9c4d3a80fbbcc961e111914e4d5c0eaf5729f.css"
+    integrity="sha256-fSct41tBD7FlN3VQzfnE06gPu8yWHhEZFOTVwOr1cp8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/blog/fontawesome/css/solid.min.55d8333481b07a08e07cf6f37319753a2b47e99f4c395394c5747b48b495aa9b.css"
+    integrity="sha256-VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/blog/fontawesome/css/regular.min.a7448d02590b43449364b6b5922ed9af5410abb4de4238412a830316dedb850b.css"
+    integrity="sha256-p0SNAlkLQ0STZLa1ki7Zr1QQq7TeQjhBKoMDFt7bhQs="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/blog/fontawesome/css/brands.min.9ed75a5d670c953fe4df935937674b4646f92674367e9e66eb995bb04e821647.css"
+    integrity="sha256-ntdaXWcMlT/k35NZN2dLRkb5JnQ2fp5m65lbsE6CFkc="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/blog/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://d4r18c3.github.io/blog/posts/curadoria-comandos-git-github/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/blog/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/blog/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js"
+      integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Curadoria de comandos básicos para git e github"/>
+<meta name="twitter:description" content="Steve Francia {{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
+Primeiras configurações Valores globais mandatórios Observação: manter user.email, user.name
+git config &ndash;global user.email &ldquo;you@example.com&rdquo; git config &ndash;global user.name &ldquo;Your Name&rdquo;
+Configuração de autenticação SSH $ ssh-keygen -t rsa -b 4096 -C &ldquo;dc3@mailbox.org&rdquo;
+Procurar a pasta de .ssh mostrada no console
+Abrir o arquivo pub
+Ir até settings/ssh keys e adicionar essa chave
+Criar e vincular um repositório (pela primeira vez) No Github Acessar a página do github e criar o novo repositório; Na opção de botão HTTPS/SSH, marcar SSH; Anotar o nome do seu branch principal (master, main, etc); (tem que ter executado git init no diret´) Copiar a linha git remote add&hellip; (git remote add origin git@github."/>
+
+
+
+  
+  <meta property="og:title" content="Curadoria de comandos básicos para git e github" />
+<meta property="og:description" content="Steve Francia {{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
+Primeiras configurações Valores globais mandatórios Observação: manter user.email, user.name
+git config &ndash;global user.email &ldquo;you@example.com&rdquo; git config &ndash;global user.name &ldquo;Your Name&rdquo;
+Configuração de autenticação SSH $ ssh-keygen -t rsa -b 4096 -C &ldquo;dc3@mailbox.org&rdquo;
+Procurar a pasta de .ssh mostrada no console
+Abrir o arquivo pub
+Ir até settings/ssh keys e adicionar essa chave
+Criar e vincular um repositório (pela primeira vez) No Github Acessar a página do github e criar o novo repositório; Na opção de botão HTTPS/SSH, marcar SSH; Anotar o nome do seu branch principal (master, main, etc); (tem que ter executado git init no diret´) Copiar a linha git remote add&hellip; (git remote add origin git@github." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://d4r18c3.github.io/blog/posts/curadoria-comandos-git-github/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-12-30T00:00:00+00:00" />
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "posts",
+        "name": "Curadoria de comandos básicos para git e github",
+        "headline": "Curadoria de comandos básicos para git e github",
+        "alternativeHeadline": "",
+        "description": "
+      
+        Steve Francia {{ $readTime := mul (div (countwords .Content) 220.0) 60 }}\nPrimeiras configurações Valores globais mandatórios Observação: manter user.email, user.name\ngit config \u0026ndash;global user.email \u0026ldquo;you@example.com\u0026rdquo; git config \u0026ndash;global user.name \u0026ldquo;Your Name\u0026rdquo;\nConfiguração de autenticação SSH $ ssh-keygen -t rsa -b 4096 -C \u0026ldquo;dc3@mailbox.org\u0026rdquo;\nProcurar a pasta de .ssh mostrada no console\nAbrir o arquivo pub\nIr até settings\/ssh keys e adicionar essa chave\nCriar e vincular um repositório (pela primeira vez) No Github Acessar a página do github e criar o novo repositório; Na opção de botão HTTPS\/SSH, marcar SSH; Anotar o nome do seu branch principal (master, main, etc); (tem que ter executado git init no diret´) Copiar a linha git remote add\u0026hellip; (git remote add origin git@github.
+
+
+      
+
+
+    ",
+        "inLanguage": "pt-br",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/d4r18c3.github.io\/blog\/posts\/curadoria-comandos-git-github\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Diego Crescêncio"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Diego Crescêncio"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Diego Crescêncio"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Diego Crescêncio"
+        },
+        "copyrightYear" : "2022",
+        "dateCreated": "2022-12-30T00:00:00.00Z",
+        "datePublished": "2022-12-30T00:00:00.00Z",
+        "dateModified": "2022-12-30T00:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Diego Crescêncio",
+            "url": "https://d4r18c3.github.io/blog/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/d4r18c3.github.io\/blog\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/d4r18c3.github.io\/blog\/posts\/curadoria-comandos-git-github\/",
+        "wordCount" : "710",
+        "genre" : [ 
+      
+      "Configurações"
+
+    ],
+        "keywords" : [ 
+      
+      "git"
+
+    
+      
+        ,
+
+      
+      "github"
+
+    ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/blog/images/d.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/blog"></a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p>Aprendendo em público. Uma jornada de aprendizado e recordações.</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://linkedin.com/in/diegocrescencio"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/d4r18c3"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Github"
+            title="Github"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="mailto:diego@crescencio.com.br"
+            target="_blank"
+            rel="noopener me"
+            aria-label="E-mail"
+            title="E-mail"
+          >
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Diego Crescêncio | 2020-2022
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/blog/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/blog/"
+              
+              title=""
+              >Início</a
+            >
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="1" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="1"
+                >Artigos <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    <a
+                      href="/blog/posts/"
+                      
+                      title=""
+                      >Ordem cronológica</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    <a
+                      href="/blog/categories/"
+                      
+                      title=""
+                      >Categorias</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    <a
+                      href="/blog/tags/"
+                      
+                      title=""
+                      >Tags</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            <a
+              
+              href="/blog/about/"
+              
+              title=""
+              >Sobre</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+      <div class="post__thumbnail-wrapper">
+        <img class="post__thumbnail" src="/blog/images/landscape.jpg" alt="Thumbnail image" />
+      </div>
+    
+    <div class="post__content">
+      <h1>Curadoria De Comandos Básicos Para Git E Github</h1>
+      <h3>Table of Contents</h3>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#primeiras-configurações">Primeiras configurações</a>
+      <ul>
+        <li><a href="#valores-globais-mandatórios">Valores globais mandatórios</a></li>
+        <li><a href="#configuração-de-autenticação-ssh">Configuração de autenticação SSH</a></li>
+        <li><a href="#criar-e-vincular-um-repositório-pela-primeira-vez">Criar e vincular um repositório (pela primeira vez)</a></li>
+        <li><a href="#comandos-rotineiros-de-atualização">Comandos rotineiros de atualização</a></li>
+        <li><a href="#outros-comandos">Outros comandos</a></li>
+      </ul>
+    </li>
+    <li><a href="#resolvendo-problemas-comuns-no-git">Resolvendo problemas comuns no Git</a></li>
+    <li><a href="#reconhecer-arquivos-sql">Reconhecer arquivos SQL</a></li>
+  </ul>
+</nav>
+<figure><img src="/media/spf13.jpg"/><figcaption>
+            <h4>Steve Francia</h4>
+        </figcaption>
+</figure>
+
+<p>{{ $readTime := mul (div (countwords .Content) 220.0) 60 }}</p>
+<!-- raw HTML omitted -->
+<h2 id="primeiras-configurações">Primeiras configurações</h2>
+<h3 id="valores-globais-mandatórios">Valores globais mandatórios</h3>
+<p><strong>Observação: manter user.email, user.name</strong></p>
+<blockquote>
+<p>git config &ndash;global user.email &ldquo;<a href="mailto:you@example.com">you@example.com</a>&rdquo;
+git config &ndash;global user.name &ldquo;Your Name&rdquo;</p>
+</blockquote>
+<h3 id="configuração-de-autenticação-ssh">Configuração de autenticação SSH</h3>
+<ol>
+<li>
+<blockquote>
+<p>$ ssh-keygen -t rsa -b 4096 -C &ldquo;<a href="mailto:dc3@mailbox.org">dc3@mailbox.org</a>&rdquo;</p>
+</blockquote>
+</li>
+<li>
+<p>Procurar a pasta de .ssh mostrada no console</p>
+</li>
+<li>
+<p>Abrir o arquivo pub</p>
+</li>
+<li>
+<p>Ir até settings/ssh keys e adicionar essa chave</p>
+</li>
+</ol>
+<h3 id="criar-e-vincular-um-repositório-pela-primeira-vez">Criar e vincular um repositório (pela primeira vez)</h3>
+<h4 id="no-github">No Github</h4>
+<ol>
+<li>Acessar a página do github e criar o novo repositório;</li>
+<li>Na opção de botão HTTPS/SSH, marcar SSH;</li>
+<li>Anotar o nome do seu branch principal (master, main, etc);</li>
+<li>(tem que ter executado git init no diret´)</li>
+<li>Copiar a linha git remote add&hellip; (git remote add origin <a href="mailto:git@github.com">git@github.com</a>:mezengasoftware/java-pills.git).</li>
+</ol>
+<h4 id="no-gitbash">No Gitbash</h4>
+<ol>
+<li>git init (inicia um repositório local);</li>
+<li>git add . (adiciona todo o diretório ao stage);</li>
+<li>git commit -m &ldquo;mensagem explicativa do commit&rdquo;;</li>
+<li>git branch -M main (considerando que main é o nome do seu branch principal, criado anteriormente no github);</li>
+<li>git remote add origin <a href="mailto:git@github.com">git@github.com</a>:mezengasoftware/java-pills.git (vincula o repositório local ao repositório remoto;</li>
+<li>git push -u origin main (considerando que main é seu branch principal)</li>
+</ol>
+<h3 id="comandos-rotineiros-de-atualização">Comandos rotineiros de atualização</h3>
+<p>//Adicionar tudo ao Stagging?</p>
+<p>git add .</p>
+<p>//</p>
+<p>git commit -m &ldquo;Mensagem aqui!&rdquo;</p>
+<p>//Verificar alterações.</p>
+<p>git status</p>
+<p>git push</p>
+<p>git log &ndash;oneline</p>
+<h4 id="git-checkout">Git checkout</h4>
+<p><code>git checkout &lt;código&gt;</code></p>
+<p>ou</p>
+<p><code>git checkout HEAD~x</code></p>
+<p><code>git checkout main</code> (para voltar ao topo. <strong>certifique-se que não haja mudança nos arquivos!</strong>)</p>
+<p><strong>Caso eu tenha feita alguma alteração acidental:</strong></p>
+<p><code>git reset</code> (Tirar arquivos da área de stage)</p>
+<p><code>git clean -df</code></p>
+<p><code>git checkout -- .</code> (Checkout para limpart modificações)</p>
+<h4 id="clonar-e-modificar-um-repositório">Clonar e modificar um repositório</h4>
+<p>Clonar para trazer projeto <strong>e histórico</strong>.</p>
+<p><code>git clone git@github.com:mezengasoftware/java-pills.git</code></p>
+<p><code>git add .</code></p>
+<p><code>git commit -m &quot;mensagem&quot;</code></p>
+<p><code>code .</code> (Abrir VSCode no diretório de trabalho)</p>
+<p><code>git push</code></p>
+<h3 id="outros-comandos">Outros comandos</h3>
+<p><code>git log</code></p>
+<p><code>git log --online</code></p>
+<p><code>code .</code> (Abrir VSCode)</p>
+<p><code>ls</code></p>
+<h2 id="resolvendo-problemas-comuns-no-git">Resolvendo problemas comuns no Git</h2>
+<ol>
+<li>
+<p>Como remover arquivos da área de stage?</p>
+<blockquote>
+<p>Contexto: Adicionei arquivos para stage, porém me arrependi.</p>
+</blockquote>
+</li>
+</ol>
+<p><code>git status</code></p>
+<p><code>git reset</code></p>
+<ol start="2">
+<li>
+<p>Como modificar modificações não salvas?</p>
+<blockquote>
+<p>Contexto:  Volta o projeto para estado do último commit.</p>
+</blockquote>
+</li>
+</ol>
+<p><code>git status</code></p>
+<p><code>git reset</code></p>
+<p><code>git clean -df</code></p>
+<p><code>git checkout -- .</code></p>
+<ol start="3">
+<li>
+<p>O que fazer quando abre o editor Vim?</p>
+<blockquote>
+<p>Contexto: Alguns comandos podem abrir o edito vim automaticamente. Ex. commit sem mensagem.</p>
+</blockquote>
+</li>
+</ol>
+<p>​	<code>i</code> (Habilita a edição)</p>
+<p><!-- raw HTML omitted --><code>:wq</code><!-- raw HTML omitted --> (Write, Quit: Salva alterações)</p>
+<p><!-- raw HTML omitted --> <code>:q!</code> <!-- raw HTML omitted --> (Quit, Force: Sai sem salvar alterações)</p>
+<ol start="4">
+<li>O que fazer quando abre o editor nano?</li>
+</ol>
+<p><code>ctrl o</code> (salvar)</p>
+<p><code>ctrl x</code> (sair)</p>
+<ol start="5">
+<li>Como desfazer o último commit?</li>
+</ol>
+<blockquote>
+<p>Quero aproveitar a maioria das alterações, mas faltou uma coisinha pra mudar. Então eu defaço o commit, mantendo as modificações anteriores, apenas adicionando a coisinha.</p>
+</blockquote>
+<p><code>git status</code></p>
+<p><code>git reset --soft HEAD~1</code> (Soft não apaga as alterações)</p>
+<ol start="6">
+<li>Deletar commits e também as modificações dos arquivos?</li>
+</ol>
+<blockquote>
+<p>Volta até o commit escolhido, deletando ações de commits posteriores. <strong>Ação destrutiva!</strong></p>
+</blockquote>
+<p><code>git status</code></p>
+<p><code>git reset --hard HEAD~1</code> (Volta para o penúltimo commit)</p>
+<p>ou</p>
+<p><code>git reset --hard &lt;Código do commit&gt;</code> (Código do commit)</p>
+<ol start="7">
+<li>Como atualizar o repositório local em relação ao remoto?</li>
+</ol>
+<p><code>git pull origin main</code></p>
+<ol start="8">
+<li>Como resolver push rejeitado?</li>
+</ol>
+<blockquote>
+<p>O histórico do projeto local esta atrasado/divergente em relação ao remoto. Após git pull origin main, o editor de texto será aberto com um nome proposto de commit, afim de efetuar o merge de três vias. No nano, ctrl + o, ctrl + x salva e fecha o editor.</p>
+</blockquote>
+<p><code>git pull origin main</code></p>
+<p><code>git push</code></p>
+<ol start="9">
+<li>Conflito de edição de mesmo arquivo em dois locais diferentes ou por duas pessoas.</li>
+</ol>
+<p><code>Vou obter o erro de conflito, ao fazer o pull e usar git status, o Git me avisa do conflito. Uso code . para verificar o conflito e remover o errado.</code></p>
+<ol start="10">
+<li>Como sobrescrever um histórico no Github?</li>
+</ol>
+<blockquote>
+<p>Ao encontrar disparidade de commits entre repositório local e remoto, avalio a situação e percebo que posso sobrescrever o último commit remoto. Ou seja, vou ignorar a disparidade de commits e forçar um push, pois sei que no meu repositório local esta tudo certo. <strong>Ação destrutiva!</strong></p>
+</blockquote>
+<p><code>git push -f</code></p>
+<ol start="11">
+<li>
+<p>Verificar qual é o repositório remoto e apontar para outro.</p>
+<blockquote>
+<p>Criar outro repositório remoto. Apontar meu repositório local para este novo remoto (set-url), conservando todo o histórico!</p>
+</blockquote>
+</li>
+</ol>
+<p><code>git remote -v</code></p>
+<p><code>git remote set-url origin git@github.com:mezengasoftware/java-pills.git</code></p>
+<h2 id="reconhecer-arquivos-sql">Reconhecer arquivos SQL</h2>
+<p><a href="https://github.com/Thomas-George-T/HackerRank-SQL-Challenges-Solutions/issues/1">https://github.com/Thomas-George-T/HackerRank-SQL-Challenges-Solutions/issues/1</a></p>
+<blockquote>
+<p><code>.gitattributes</code> solved this issue for me!</p>
+</blockquote>
+<blockquote>
+<p>after providing
+*.sql linguist-detectable=true
+*.sql linguist-language=sql</p>
+</blockquote>
+</div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/blog/categories/configura%C3%A7%C3%B5es/">Configurações</a></span>
+
+
+      
+
+      
+        <span><a class="tag" href="/blog/tags/git/">git</a><a class="tag" href="/blog/tags/github/">github</a></span>
+
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Diego Crescêncio | 2020-2022
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/blog/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

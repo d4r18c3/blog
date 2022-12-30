@@ -1,0 +1,7 @@
+.post__content h1 {
+	text-transform: lowercase;
+}
+
+.post__content h1::first-letter {
+	text-transform: uppercase;
+}

@@ -3,10 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://d4r18c3.github.io/blog/</loc>
-    <lastmod>2022-12-29T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://d4r18c3.github.io/blog/categories/</loc>
-    <lastmod>2022-12-29T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://d4r18c3.github.io/blog/categories/configura%C3%A7%C3%B5es/</loc>
+    <lastmod>2022-12-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://d4r18c3.github.io/blog/posts/curadoria-comandos-git-github/</loc>
+    <lastmod>2022-12-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://d4r18c3.github.io/blog/tags/git/</loc>
+    <lastmod>2022-12-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://d4r18c3.github.io/blog/tags/github/</loc>
+    <lastmod>2022-12-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://d4r18c3.github.io/blog/posts/</loc>
+    <lastmod>2022-12-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://d4r18c3.github.io/blog/tags/</loc>
+    <lastmod>2022-12-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://d4r18c3.github.io/blog/posts/configura%C3%A7%C3%A3o-sublime-text-4/</loc>
     <lastmod>2022-12-29T00:00:00+00:00</lastmod>
@@ -14,16 +32,12 @@
     <loc>https://d4r18c3.github.io/blog/categories/epop%C3%A9ias/</loc>
     <lastmod>2022-12-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://d4r18c3.github.io/blog/posts/</loc>
-    <lastmod>2022-12-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://d4r18c3.github.io/blog/tags/</loc>
-    <lastmod>2022-12-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://d4r18c3.github.io/blog/tags/teste/</loc>
     <lastmod>2022-12-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://d4r18c3.github.io/blog/posts/first-post/</loc>
     <lastmod>2022-12-16T21:49:57-03:00</lastmod>
+  </url><url>
+    <loc>https://d4r18c3.github.io/blog/series/</loc>
   </url>
 </urlset>
