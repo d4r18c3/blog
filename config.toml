@@ -1,15 +1,21 @@
 baseURL = 'https://d4r18c3.github.io/blog/'
-languageCode = 'en-us'
+languageCode = 'pt-br'
 title = 'Blog1'
 
 theme = 'anatole'
 
 
 
+[taxonomies]
+  category = 'Epopéias'
+  tag = 'teste'
+
+
+
 [params]
   author = 'dc3'
-  description = 'A blog about all things technical.'
-  profilePicture = 'images/avatar.png'
+  description = 'Aprendendo em público. Uma jornada de aprendizado e recordações.'
+  profilePicture = 'images/d.jpg'
 
   [[menu.main]]
     identifier = "tags"
