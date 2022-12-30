@@ -1,0 +1,42 @@
+baseURL = 'https://d4r18c3.github.io/blog/'
+languageCode = 'pt-br'
+title = 'Blog1'
+
+theme = 'anatole'
+
+[menu]
+
+  [[menu.main]]
+  name = "Início"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Artigos"
+  weight = 200
+  identifier = "posts"
+  url = "/posts/"
+
+
+
+  [[menu.main]]
+  name = "Sobre"
+  weight = 300
+  identifier = "about"
+  url = "/about/"
+
+[params]
+  author = 'dc3'
+  description = 'Aprendendo em público. Uma jornada de aprendizado e recordações.'
+  profilePicture = 'images/d.jpg'
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+
+  [[params.social]]
+    icon = "github"
+    name = "GitHub"
+    url = "https://github.com/d4r18c3"
