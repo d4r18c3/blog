@@ -4,13 +4,47 @@ title = 'Blog1'
 
 theme = 'anatole'
 
+[menu]
+
+  [[menu.main]]
+  name = "Início"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Artigos"
+  weight = 200
+  identifier = "posts"
+  url = "/posts/"
+
+  [[menu.main]]
+  name = "Ordem cronológica"
+  weight = 210
+  identifier = "posts"
+  url = "/posts/"
+ parent = "Artigos"
+
+  [[menu.main]]
+  name = "Categorias"
+  weight = 220
+  identifier = "posts"
+  url = "/categories/"
+ parent = "Artigos"
+
+  [[menu.main]]
+  name = "Etiquetas"
+  weight = 230
+  identifier = "posts"
+  url = "/tags/"
+ parent = "Artigos"
 
 
-[taxonomies]
-  category = 'Epopéias'
-  tag = 'teste'
-
-
+  [[menu.main]]
+  name = "Sobre"
+  weight = 300
+  identifier = "about"
+  url = "/about/"
 
 [params]
   author = 'dc3'
